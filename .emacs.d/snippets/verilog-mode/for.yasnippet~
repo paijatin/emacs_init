@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: for
+# key: for
+# expand-env: ()
+# --
+for (${1:VARIABLE} = 0; $1 < ${2:LIMIT}; $1++)
+  begin
+    ${3:/* code */}
+  end

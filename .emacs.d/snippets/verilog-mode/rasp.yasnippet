@@ -1,0 +1,20 @@
+# -*- mode: snippet -*-
+# name: class
+# key: class
+# expand-env: ((syas/wrap-around-region 'nil) (yas/indent-line 'fixed))
+# --
+
+class ${1:class_name} extends ${2:base_class};
+  `uvm_component_utils($1)
+  extern function new(string name="", uvm_component parent=null);
+
+  //
+  // Internals
+  //
+
+endclass: $1
+
+function $1::new(string name="", uvm_component parent=null);
+  super.new(name, parent);
+endfunction : new
+

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: for
+# key: for
+# expand-env: ((syas/wrap-around-region 'nil) (yas/indent-line 'fixed))
+# --
+for (${1:VARIABLE} = 0; $1 < ${2:LIMIT}; $1++)
+  begin
+    ${3:/* code */}
+  end
